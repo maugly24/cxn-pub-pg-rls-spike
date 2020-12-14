@@ -960,7 +960,7 @@ Resources:
                 - mkdir pgrls
                 - cd pgrls
                 - git init
-                - git pull https://github.com/maugly24/cxn-pub-pg-rls.git
+                - git pull https://github.com/maugly24/cxn-pub-pg-rls-spike.git
                 - cd ..
             build:
               commands:
