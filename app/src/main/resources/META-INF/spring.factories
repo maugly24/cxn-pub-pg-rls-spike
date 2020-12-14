@@ -1,0 +1,4 @@
+
+# Application listener to replace the spring.datasource.password environment
+# variable with the decrypted parameter store value
+org.springframework.boot.env.EnvironmentPostProcessor=cxn.pub.pgrls.configuration.SecretsManagerConfiguration
