@@ -32,6 +32,9 @@ public class SecretsManagerConfiguration implements EnvironmentPostProcessor {
 
 	@Override
 	public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
+		if (String.valueOf(environment.getProperty("DECRYPTED_PASSWORDS_PROVIDED")) {
+				return;
+		}
 		String awsRegion = environment.getProperty("AWS_REGION");
 		String appPwParam = environment.getProperty("spring.datasource.password");
 		String adminPwParam = environment.getProperty("admin.datasource.password");
