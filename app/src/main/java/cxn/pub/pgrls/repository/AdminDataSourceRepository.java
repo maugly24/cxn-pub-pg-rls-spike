@@ -28,6 +28,10 @@ public class AdminDataSourceRepository {
 	DataSourceProperties adminDataSourceProperties;
 
 	public DataSource dataSource() {
+		logger.error(adminDataSourceProperties.determineUrl());
+		logger.error(adminDataSourceProperties.determineUsername());
+		logger.error(adminDataSourceProperties.determinePassword());
+		logger.error(adminDataSourceProperties.determineDatabaseName());
 		return adminDataSourceProperties.initializeDataSourceBuilder().build();
 	}
 }
